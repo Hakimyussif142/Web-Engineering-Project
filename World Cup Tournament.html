@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FIFA World Cup Tournament Pairings - View the groups and teams participating in the tournament.">
+    <title>World Cup Tournament</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Light blue background */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #d32f2f; /* Red color for the title */
+            text-transform: uppercase;
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out, bounce 1.5s infinite;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            animation: slideIn 1s ease-in-out;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        th, td {
+            border: 2px solid #333;
+            padding: 12px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #00796b; /* Teal color for headers */
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #ffccbc; /* Light orange hover effect */
+            transform: scale(1.02);
+            transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+        }
+        
+        .header-row {
+            background: linear-gradient(90deg, #d32f2f, #f57c00); /* Red to orange gradient */
+        }
+        
+        .header-row h1 {
+            color: white;
+            margin: 5px 0;
+            font-size: 24px;
+            animation: glow 2s infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b; }
+            to { text-shadow: 0 0 20px #ff5722, 0 0 30px #ff5722; }
+        }
+        
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #00796b; /* Teal color for footer text */
+            animation: fadeIn 3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr class="header-row">
+                <th colspan="3"><h1>FIFA WORLD CUP PAIRINGS</h1></th>
+            </tr>
+            <tr>
+                <th>GROUP A</th>
+                <th>GROUP B</th>
+                <th>GROUP C</th>
+            </tr>
+            <tr>
+                <td>Ghana</td>
+                <td>Brazil</td>
+                <td>Argentina</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td>England</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Canada</td>
+                <td>Switzerland</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Uruguay</td>
+                <td>Senegal</td>
+                <td>Cameroon</td>
+            </tr>
+        </table>
+        <footer>
+            &copy; 2023 FIFA World Cup. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
